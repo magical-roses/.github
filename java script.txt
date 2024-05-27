@@ -1,0 +1,27 @@
+document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const question1 = document.querySelector('input[name="question1"]:checked').value;
+    const question2 = document.querySelector('input[name="question2"]:checked').value;
+    const question3 = document.querySelector('input[name="question3"]:checked').value;
+    const question4 = document.querySelector('input[name="question4"]:checked').value;
+    const question5 = document.querySelector('input[name="question5"]:checked').value;
+    
+    let positiveAnswers = 0;
+    if (question1 === 'yes') positiveAnswers++;
+    if (question2 === 'yes') positiveAnswers++;
+    if (question3 === 'yes') positiveAnswers++;
+    if (question4 === 'yes') positiveAnswers++;
+    if (question5 === 'yes') positiveAnswers++;
+    
+    let resultText;
+    if (positiveAnswers >= 4) {
+        resultText = 'Geweldig! Je houdt echt van rozen!';
+    } else if (positiveAnswers >= 2) {
+        resultText = 'Je lijkt rozen leuk te vinden!';
+    } else {
+        resultText = 'Misschien zijn rozen niet helemaal jouw ding.';
+    }
+    
+    document.getElementById('result').innerText = resultText;
+});

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beglitterde Rozen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo van Beglitterde Rozen" class="logo">
+        <h1>Welkom bij Beglitterde Rozen</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#roses">Onze Rozen</a></li>
+                <li><a href="#quiz">Rozen Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welkom op de website van Beglitterde Rozen!</p>
+    </section>
+    
+    <section id="roses">
+        <h2>Onze Rozen</h2>
+        <p>Bekijk onze prachtige beglitterde rozen.</p>
+    </section>
+    
+    <section id="quiz">
+        <h2>Rozen Quiz</h2>
+        <form id="quizForm">
+            <div class="question">
+                <label for="question1">Hou je van rozen?</label><br>
+                <input type="radio" id="yes1" name="question1" value="yes">
+                <label for="yes1">Ja</label><br>
+                <input type="radio" id="no1" name="question1" value="no">
+                <label for="no1">Nee</label><br><br>
+            </div>
+            <div class="question">
+                <label for="question2">Vind je het leuk om bloemen te ontvangen?</label><br>
+                <input type="radio" id="yes2" name="question2" value="yes">
+                <label for="yes2">Ja</label><br>
+                <input type="radio" id="no2" name="question2" value="no">
+                <label for="no2">Nee</label><br><br>
+            </div>
+            <div class="question">
+                <label for="question3">Geef je vaak bloemen cadeau?</label><br>
+                <input type="radio" id="yes3" name="question3" value="yes">
+                <label for="yes3">Ja</label><br>
+                <input type="radio" id="no3" name="question3" value="no">
+                <label for="no3">Nee</label><br><br>
+            </div>
+            <div class="question">
+                <label for="question4">Hou je van glitter op rozen?</label><br>
+                <input type="radio" id="yes4" name="question4" value="yes">
+                <label for="yes4">Ja</label><br>
+                <input type="radio" id="no4" name="question4" value="no">
+                <label for="no4">Nee</label><br><br>
+            </div>
+            <div class="question">
+                <label for="question5">Vind je rozen romantisch?</label><br>
+                <input type="radio" id="yes5" name="question5" value="yes">
+                <label for="yes5">Ja</label><br>
+                <input type="radio" id="no5" name="question5" value="no">
+                <label for="no5">Nee</label><br><br>
+            </div>
+            <input type="submit" value="Verstuur">
+        </form>
+        <div id="result"></div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Neem contact met ons op via info@beglitterderozen.nl</p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
